@@ -3,8 +3,14 @@ import webbrowser
 import pyttsx3
 from googlesearch import search
 
+import os
+from dotenv import load_dotenv
 
 from googleapiclient.discovery import build
+
+load_dotenv() 
+
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 
 r = sr.Recognizer()
@@ -15,7 +21,7 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-YOUTUBE_API_KEY = "AIzaSyBLBHZBYlxHkeAsT_nAkVR60CEj_hc7aA0"
+
 youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
 
 def play_on_youtube(query):

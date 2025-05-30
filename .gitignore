@@ -14,3 +14,4 @@ __pycache__/
 
 # Ignore all by default (optional, but REMOVE if it causes issues)
 # *
+.env
