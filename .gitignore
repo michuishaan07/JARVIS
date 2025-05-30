@@ -1,12 +1,16 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-
-# Python virtual environments
+# Ignore virtual environments
 .venv/
 venv/
+bin/
+lib/
+include/
 
-# Byte-compiled files
+# Python cache
 __pycache__/
 *.py[cod]
 
 # OS files
 .DS_Store
+
+# Ignore all by default (optional, but REMOVE if it causes issues)
+# *
