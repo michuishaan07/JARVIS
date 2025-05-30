@@ -35,13 +35,15 @@ A simple voice-controlled assistant built in Python that can open websites, play
    cd JARVIS
 
 2.Create and activate a virtual environment (optional but recommended):
+   ```bash
 python3 -m venv venv
 source venv/bin/activate
-
+ ```
 
 3.Install dependencies:
+  ```bash
 pip install -r requirements.txt
-
+ ```
 
 4.Make sure you have a valid YouTube API key and replace the placeholder in the script.
 
